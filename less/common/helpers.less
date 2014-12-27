@@ -1,0 +1,39 @@
+/* Helpers
+***************************************************************************/
+.float-left {float:left;}
+.float-right {float:right;}
+.none{display:none;}
+.block{display:block;}
+.center{text-align:center;}
+.left{text-align:left;}
+.right{text-align:right;}
+
+.clear{clear:both;height:1px;font-size:1px;visibility:hidden}
+
+.cfix {width:100%;}
+.cfix:after{display:block;clear:both;font-size:1px;height:0;content:"\0020";visibility:hidden;}
+.cfix {display:inline-block;}
+/* Hide from IE Mac \*/
+.cfix {display:block;}
+/* End hide from IE Mac */
+
+.hidden
+{
+    opacity: 0;
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.u-clear-fix:after
+{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.no-scroll {
+    overflow: hidden !important;
+}

@@ -1,0 +1,50 @@
+.bg-cover() {
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.box-sizing(@boxSizing) {
+  -webkit-box-sizing: @boxSizing;
+     -moz-box-sizing: @boxSizing;
+          box-sizing: @boxSizing;
+}
+
+.transition(@transition) {
+  -webkit-transition:@transition;
+     -moz-transition:@transition;
+       -o-transition:@transition;
+          transition:@transition;
+}
+
+.transform(@transform) {
+  -webkit-transform:@transform;
+     -moz-transform:@transform;
+      -ms-transform:@transform;
+       -o-transform:@transform;
+          transform:@transform;
+}
+
+.gradient0to100(@startColor, @endColor) {
+    background: @startColor; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, @startColor 0%, @endColor 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,@startColor), color-stop(100%,@endColor)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, @startColor 0%,@endColor 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, @startColor 0%,@endColor 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, @startColor 0%,@endColor 100%); /* IE10+ */
+    background: linear-gradient(135deg, @startColor 0%,@endColor 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{startColor}', endColorstr='@{endColor}',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.block-centerd() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
