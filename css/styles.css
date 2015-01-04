@@ -201,32 +201,20 @@ body {
   margin-top: 30%;
   /*tmp*/
 }
-.secondary-even-post-wrap {
-  width: 100%;
-  position: relative;
-  margin-top: 65%;
-  /*tmp*/
-}
 .secondary-post-right-notification {
   position: absolute;
+  top: 95px;
+}
+.secondary-post-left-notification {
+  position: absolute;
+  right: 0;
   top: 95px;
 }
 .post-img-left-position {
   z-index: -1;
 }
 .post-img-right-position {
-  width: 50%;
-  display: inline-block;
-  position: absolute;
-  right: 0;
   z-index: -1;
-}
-.secondary-post-left-description-wrap {
-  width: 50%;
-  display: inline-block;
-  position: absolute;
-  left: 25%;
-  top: 90px;
 }
 .post-title-right-position {
   width: 100%;
@@ -239,12 +227,16 @@ body {
   top: 120px;
 }
 .post-title-left-position {
+  width: 100%;
   color: #fff;
   font-size: 26px;
+  text-align: right;
   text-transform: uppercase;
   font-weight: bold;
   position: absolute;
-  left: -75px;
+  left: 9%;
+  top: 120px;
+  z-index: 1;
 }
 .post-comments-right-position {
   color: #5f6266;
@@ -261,7 +253,8 @@ body {
   font-weight: bold;
   padding-right: 15px;
   position: absolute;
-  top: 120px;
+  right: 10%;
+  top: 235px;
 }
 .post-comments-left-position > i {
   color: #383c41;
@@ -282,8 +275,8 @@ body {
   font-weight: bold;
   padding-right: 15px;
   position: absolute;
-  top: 120px;
-  left: 60px;
+  top: 235px;
+  right: 0;
 }
 .post-views-left-position > i {
   color: #383c41;
@@ -341,7 +334,7 @@ body {
 .post-navbar-wrap {
   width: 100%;
   text-align: center;
-  margin-top: 100%;
+  margin-top: 100px;
   /*tmp*/
 }
 .btn-older {

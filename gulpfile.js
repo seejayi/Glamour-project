@@ -22,7 +22,8 @@ gulp.task('default', function() {
 });
 
 gulp.task('watch', function() {
-
+	// Watch livereload plugin
+	livereload.listen({ basePath: 'dist' });
 	// Watch .less files
 	gulp.watch([lessPath + '/**.less', lessPath + '/**/**.less','*.html'], ['styles']);
 	
