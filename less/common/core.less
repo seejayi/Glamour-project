@@ -183,6 +183,20 @@ body
 
 .post-img-left-position {
 	z-index: -1;
+	i {
+		color: transparent;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+	}
+
+	a:hover {
+		i {
+			color: #4ee8c2; 
+		}
+		text-decoration: none;
+		color: #4ee8c2;
+	}
 }
 
 .post-img-right-position {
@@ -244,8 +258,11 @@ body
 	}
 
 	a:hover {
-		color: #4ee8c2;
+		color: #ffffff;
 		text-decoration: none;
+		&>i {
+			color: #4ee8c2;
+		}
 	}
 }
 
@@ -263,8 +280,11 @@ body
 	}
 
 	a:hover {
-		color: #4ee8c2;
+		color: #ffffff;
 		text-decoration: none;
+		&>i {
+			color: #4ee8c2;
+		}
 	}
 }
 
@@ -282,22 +302,33 @@ body
 	}
 
 	a:hover {
-		color: #4ee8c2;
+		color: #ffffff;
 		text-decoration: none;
-	} 
+		&>i {
+			color: #4ee8c2;
+		}
+	}
 }
 
 .post-views-left-position {
-		&>i {
-		color: #383c41;
-	}
-
 	color: #5f6266;
 	font-weight: bold;
 	padding-right: 15px;
 	position: absolute;
 	top: 235px;
 	right: 0;
+
+	&>i {
+		color: #383c41;
+	}
+
+	a:hover {
+		color: #ffffff;
+		text-decoration: none;
+		&>i {
+			color: #4ee8c2;
+		}
+	}
 }
 
 //##Right navbar styles
@@ -377,7 +408,16 @@ body
 	font-size: 18px;
 	font-weight: bold;
 
+	i {
+		color: inherit;
+		padding-right: 10px;
+	}
+
 	&:hover {
+		i {
+			color: #4ee8c2;
+		}
+
 		color: #ffffff;
 		background-color: inherit;
 		border: none;
@@ -392,7 +432,16 @@ body
 	font-size: 18px;
 	font-weight: bold;
 
+	i {
+		color: inherit;
+		padding-left: 10px;
+	}
+
 	&:hover {
+		i {
+			color: #4ee8c2;
+		}
+
 		color: #ffffff;
 		background-color: inherit;
 		border: none;
@@ -452,7 +501,12 @@ input[type="email"]:-ms-input-placeholder {color: #2f3237;}
 //##Popular post styles
 
 .popular-post-wrap {
-	width: 100%
+	width: 100%;
+
+		a {
+		color: inherit;
+		text-decoration: none;
+	}
 }
 
 .popular-post-title {
@@ -473,6 +527,28 @@ input[type="email"]:-ms-input-placeholder {color: #2f3237;}
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: bold;
+
+	&:hover {
+		color: #4ee8c2;
+		text-decoration: none;
+	} 
+}
+
+.popular-post-img-wrap {
+	i {
+		color: transparent;
+		position: absolute;
+		top: 40%;
+		left: 75%;
+	}
+
+	&:hover {
+		i {
+			color: #4ee8c2; 
+		}
+		text-decoration: none;
+		color: #4ee8c2;
+	}
 }
 
 .odd-popular-post-block {
