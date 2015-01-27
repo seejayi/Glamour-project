@@ -201,20 +201,6 @@ body {
   width: 60%;
   line-height: 20px;
 }
-.glamour-bxslider {
-  max-width: inherit;
-  height: inherit;
-}
-.glamour-bxslider.bx-wrapper {
-  background: #2b2f34;
-  border: none;
-  box-shadow: none;
-}
-.glamour-bxslider.bx-viewport {
-  background: #2b2f34;
-  border: none;
-  box-shadow: none;
-}
 /*.post-img {
 	width: 50%;
 	display: inline;

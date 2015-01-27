@@ -10,12 +10,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="jquery-bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+    <link href="rs-plugin/settings.css" rel="stylesheet" />
 
     
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="jquery-bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="rs-plugin/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+    <script src="rs-plugin/jquery.themepunch.tools.min.js" type="text/javascript"></script>
       
     <script src="js/main.js"></script>
 
@@ -66,11 +68,75 @@
     <div class="primary-post-wrap">
 
       <div class="post-description-wrap">
+
+
+      <div class="tp-banner-container">
+        <div class="tp-banner" >
+          <ul>
+            <!-- SLIDE  -->
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+              <!-- MAIN IMAGE -->
+              <img src="css/img/post_stone_cold_fox.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+              <!-- LAYERS -->
+              <!-- LAYER NR. 1 -->
+              <div class="tp-caption lightgrey_divider skewfromrightshort fadeout"
+                data-x="85"
+                data-y="224"
+                data-speed="500"
+                data-start="1200"
+                data-easing="Power4.easeOut">My Caption
+
+                        <span class="post-date">
+                          june 15,2014
+                        </span>
+                        <span class="v-divider"></span>
+                        <span class="post-type">
+                          fashion
+                        </span>
+                        <span class="post-comments">
+                          <i class="fontawesome icon-comment icon-flip-horizontal icon-fixed-width"></i>
+                          12
+                        </span>
+                        <span class="post-views">
+                          <i class="fontawesome icon-eye-open icon-fixed-width"></i>
+                          248
+                        </span>
+
+
+                        <h2 class="post-title">
+                          6 fall style lessons from stone cold fox
+                        </h2>
+                        <h5 class="post-subtitle">
+                          Not wearing white after Labor Day is like not wearing black after Christmas.
+                        </h5>
+              </div>
+              ...
+
+            </li>
+            <!-- SLIDE  -->
+            <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+              <!-- MAIN IMAGE -->
+              <img src="css/img/post_32_suprising_things.png" alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+              <!-- LAYERS -->
+              <!-- LAYER NR. 1 -->
+              <div class="tp-caption lightgrey_divider skewfromrightshort fadeout"
+                data-x="85"
+                data-y="224"
+                data-speed="500"
+                data-start="1200"
+                data-easing="Power4.easeOut">My Caption
+              </div>
+              ...
+            </li>
+            ....
+          </ul>
+        </div>
+      </div>
       <!-- Post_1 slider _BEGIN-->
-      <div class="glamour-bxslider">
+      <div class="">
 
         <!-- Post_1 slide__1-->
-        <div class="slide">
+        <div class="tp-simpleresponsive">
           
 
             <span class="post-date">
@@ -97,15 +163,16 @@
             Not wearing white after Labor Day is like not wearing black after Christmas.
           </h5>
 
+          <img src="css/img/post_stone_cold_fox.png">
+          
         </div>
 
 
-          <img src="css/img/post_stone_cold_fox.png">
 
 
         <!-- Post_1 slide__2-->
 
-        <div class="slide">
+        <div class="">
           
 
           <span class="post-date">
@@ -132,13 +199,14 @@
             Slide_2 test _subtitle
           </h5>
 
+          <img src="css/img/post_32_suprising_things.png">
+
         </div>
 
 
-          <img src="css/img/post_32_suprising_things.png">
 
         <!-- Post_1 slide__3-->
-        <div class="slide">
+        <div class="">
           
 
           <span class="post-date">
@@ -164,13 +232,14 @@
             Slide_3 test _subtitle
           </h5>
 
+          <img src="css/img/post_model_dresser.png">
+
         </div>
 
-          <img src="css/img/post_model_dresser.png">
 
 
       <!-- Post_1 bxSlider _END-->    
-      </div>
+      
 
 
 <!--       <div class="dotstyle dotstyle-stroke">
@@ -185,7 +254,7 @@
 
 
       
-    </div>
+
     <!-- Post_1 stone_cold_fox(primary-post) ___END -->
 
     <!-- Post_2 model_dresser(secondary post _left_img_position) ___BEGIN -->
@@ -275,6 +344,7 @@
       </div>
 
     </div>
+
     <!-- Post_3 32 Surprising Things(secondary post _right_img_position) ___END -->
 
     <!-- Content navigation_btns section -->
@@ -517,6 +587,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!--<script src="js/bootstrap.min.js"></script>-->
+        <script type="text/javascript">
+          jQuery(document).ready(function() {
+               jQuery('.tp-banner').revolution(
+              {
+                delay:9000,
+
+                hideThumbs:10
+              });
+          });
+        </script>
 
   </body>
 </html>
