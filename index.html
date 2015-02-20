@@ -16,9 +16,10 @@
     
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <!-- 
     <script src="rs-plugin/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
     <script src="rs-plugin/jquery.themepunch.tools.min.js" type="text/javascript"></script>
-      
+    -->  
     <script src="js/main.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -43,7 +44,10 @@
 
     <!-- Menu block __BEGIN-->
     <nav class="top-menu">
-      <a href="javascript:;" class="top-menu__btn"><i class="fontawesome icon-reorder"></i></a>
+  
+      <a href="javascript:;" class="top-menu__btn navbar-left">
+        <i class="fontawesome icon-reorder"></i>
+      </a>
       <ul class="top-menu__menu">
         <li class="top-menu__menu-item">
           <a href="#">FASHION</a>
@@ -58,8 +62,13 @@
           <a href="#">CULTURE</a>
         </li>
       </ul>
-      <a href="javascript:;" class="top-menu__btn"><i class="fontawesome icon-search"></i></a>
+      <a href="javascript:;" class="top-menu__btn navbar-right">
+        <i class="fontawesome icon-search"></i>
+      </a>
     </nav>
+    <!-- <nav class="top-menu"> -->
+    <!-- </nav> -->
+
     <!-- Menu block __END-->
 
     <!-- Content __BEGIN-->
@@ -363,15 +372,19 @@
     <!-- Subscribe section -->
 
       <form class="navbar-form" role="email">
-        <div class="subscribe-block-wrap">
-          <span class="subscribe-description">
+        <div class="subscribe-block-wrap input-group">
+          <span class="subscribe-description navbar-text navbar-left">
             subscribe to the news
           </span>
-          <div class="form-group">
+          <!-- <div class="input-group"> -->
             <input type="email" class="form-control subscribe-form" placeholder="enter you email">
+          <span class="input-group-btn">
+            
+            <button type="submit" class="btn btn-default btn-subscribe">subscribe</button>
+          </span>
+          
           </div>
-          <button type="submit" class="btn btn-default btn-subscribe">subscribe</button>
-        </div>
+        <!-- </div> -->
       </form>
 
       <!-- Popular post section ___BEGIN-->
@@ -578,7 +591,7 @@
       </ul>
       
       <span class="footer-copyright">
-        2014 © Glamour Blog
+        2015 © Glamour Blog
       </span>
     </footer>
     <!-- Footer block _END-->
@@ -588,16 +601,16 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!--<script src="js/bootstrap.min.js"></script>-->
         
-        <script type="text/javascript">
-          jQuery(document).ready(function() {
-               jQuery('.tp-banner').revolution(
-              {
-                delay:9000
+         <script type="text/javascript">
+        //   jQuery(document).ready(function() {
+        //        jQuery('.tp-banner').revolution(
+        //       {
+        //         delay:9000
 
               
-              });
-          });
-        </script>
+        //       });
+        //   });
+         </script>
 
   </body>
 </html>
