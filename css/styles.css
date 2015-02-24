@@ -221,6 +221,16 @@ body {
   color: inherit;
   text-decoration: none;
 }
+.blur img {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.blur img:hover {
+  -webkit-filter: blur(5px);
+}
 .secondary-post-right-notification {
   position: absolute;
   top: 95px;
@@ -238,6 +248,7 @@ body {
   position: absolute;
   top: 40%;
   left: 50%;
+  z-index: 1;
 }
 .post-img-left-position a:hover {
   text-decoration: none;
@@ -455,24 +466,23 @@ body {
 }
 .subscribe-description {
   color: #4ee8c2;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
-  letter-spacing: 1px;
   text-transform: uppercase;
-  padding: 0 20px 0 20px;
+  padding: 10px 0 0 15px;
 }
 .subscribe-form {
+  width: 100%;
+  height: 40px;
   background-color: #25282D;
   text-transform: uppercase;
-  letter-spacing: 1px;
   border: 0;
   border-radius: 0;
   font-weight: bold;
-  /*	&.form-control {
-		width: 630px;
-		height: 40px;
-		margin-right: 20px;
-	}*/
+  padding-left: 15px;
+}
+.subscribe-form.form-input {
+  margin-right: 20px;
 }
 input[type="email"]::-webkit-input-placeholder {
   color: #2f3237;
@@ -493,6 +503,7 @@ input[type="email"]:-ms-input-placeholder {
   background-color: #4ee8c2;
   border-radius: 0;
   border: 0;
+  margin: 0 15px 0 15px;
 }
 .popular-post-wrap {
   width: 100%;
@@ -528,6 +539,7 @@ input[type="email"]:-ms-input-placeholder {
   position: absolute;
   top: 40%;
   left: 75%;
+  z-index: 1;
 }
 .popular-post-img-wrap:hover {
   text-decoration: none;
